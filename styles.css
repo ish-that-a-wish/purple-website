@@ -49,7 +49,7 @@ input, textarea, select {
     border-radius: 5px;
     border: 2px solid #8e44ad;
     margin: 10px 0;
-    background-color: #f4f4f4;
+    background-color: #EBE8FC; /* Light purple background */
     color: #8e44ad;
 }
 
@@ -62,7 +62,7 @@ input, textarea, select {
 
 /* Footer (optional, if you want a footer) */
 footer {
-    background-color: #8e44ad;
+    background-color: #EBE8FC; /* Light purple background */
     color: white;
     padding: 20px;
     text-align: center;
