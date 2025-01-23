@@ -4,7 +4,7 @@
 /* General body styling */
 body {
     font-family: 'Quicksand', sans-serif !important;
-    background-color: #E0B0FF !important; /* Light purple background */
+    background-color: #D39BF7 !important; /* Slightly darker purple background */
     color: white !important; /* White text for contrast */
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ input, textarea, select {
     border-radius: 5px;
     border: 2px solid #8e44ad;
     margin: 10px 0;
-    background-color: #EBE8FC; /* Light purple background */
+    background-color: #D39BF7; /* Darker purple background for input fields */
     color: #8e44ad;
 }
 
@@ -62,7 +62,7 @@ input, textarea, select {
 
 /* Footer (optional, if you want a footer) */
 footer {
-    background-color: #EBE8FC; /* Light purple background */
+    background-color: #D39BF7; /* Darker purple background for footer */
     color: white;
     padding: 20px;
     text-align: center;
