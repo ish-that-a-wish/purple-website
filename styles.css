@@ -3,9 +3,9 @@
 
 /* General body styling */
 body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #EBE8FC; /* Light purple background */
-    color: white; /* White text for contrast */
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: #EBE8FC !important; /* Light purple background */
+    color: white !important; /* White text for contrast */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,7 +13,7 @@ body {
 
 /* Styling for headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #8e44ad; /* Slightly darker purple for headings */
+    color: #8e44ad !important; /* Slightly darker purple for headings */
 }
 
 /* Links */
