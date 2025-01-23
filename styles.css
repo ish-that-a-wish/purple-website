@@ -34,4 +34,36 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5p
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9b59b6; /* Lighter purple when hovering */
+}
+
+/* Input fields and form elements */
+input, textarea, select {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #8e44ad;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    color: #8e44ad;
+}
+
+/* Adding some spacing and making sure everything aligns well */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer (optional, if you want a footer) */
+footer {
+    background-color: #8e44ad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
