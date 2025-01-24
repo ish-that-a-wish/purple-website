@@ -13,7 +13,7 @@ body {
 
 /* Styling for headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #8e44ad !important; /* Slightly darker purple for headings */
+    color: #ad9a44 !important; /* Slightly darker purple for headings */
 }
 
 /* Links */
@@ -49,7 +49,7 @@ input, textarea, select {
     border-radius: 5px;
     border: 2px solid #8e44ad;
     margin: 10px 0;
-    background-color: #D39BF7; /* Darker purple background for input fields */
+    background-color: #f7ef9b; /* Darker purple background for input fields */
     color: #8e44ad;
 }
 
@@ -62,7 +62,7 @@ input, textarea, select {
 
 /* Footer (optional, if you want a footer) */
 footer {
-    background-color: #D39BF7; /* Darker purple background for footer */
+    background-color: #f7ef9b; /* Darker purple background for footer */
     color: white;
     padding: 20px;
     text-align: center;
