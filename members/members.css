@@ -41,7 +41,7 @@ body {
 
 /* === Orange Theme === */
 .orange-theme {
-    background-color: #FF7F50 !important;  /* Coral orange background */
+    background-color: #f7c99c !important;  /* Coral orange background */
     color: white !important;
 }
 
@@ -71,7 +71,7 @@ body {
 
 /* === Red Theme === */
 .red-theme {
-    background-color: #E74C3C !important;  /* Bright red background */
+    background-color: #f79c9c !important;  /* Bright red background */
     color: white !important;
 }
 
@@ -101,7 +101,7 @@ body {
 
 /* === Cyan (Green) Theme === */
 .cyan-theme {
-    background-color: #1ABC9C !important;  /* Bright cyan background */
+    background-color: #9cf7e0 !important;  /* Bright cyan background */
     color: white !important;
 }
 
@@ -131,7 +131,7 @@ body {
 
 /* === Lime Green Theme === */
 .lime-green-theme {
-    background-color: #A8E06E !important;  /* Bright lime green background */
+    background-color: #b3f79c !important;  /* Bright lime green background */
     color: white !important;
 }
 
@@ -161,7 +161,7 @@ body {
 
 /* === Indigo Theme === */
 .indigo-theme {
-    background-color: #4B0082 !important;  /* Indigo background */
+    background-color: #9cb3f7 !important;  /* Indigo background */
     color: white !important;
 }
 
@@ -191,7 +191,7 @@ body {
 
 /* === Yellow Theme === */
 .yellow-theme {
-    background-color: #F7F49B !important;  /* Light yellow background */
+    background-color: #f7f79c !important;  /* Light yellow background */
     color: white !important;
 }
 
