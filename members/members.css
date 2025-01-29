@@ -153,38 +153,39 @@ body {
     color: white;
 }
 
-/* === Indigo Theme === */
+/* === Periwinkle Theme === */
 
-/* Indigo Theme - Deep Indigo Background */
-.indigo-theme {
-    background-color: #4B0082 !important;  /* Indigo background */
-    color: white !important;  /* White text */
+/* Periwinkle Theme - Soft light purple-blue background */
+.periwinkle-theme {
+    background-color: #b5b8d1 !important;  /* Soft periwinkle background */
+    color: #333 !important;  /* Dark text for contrast */
 }
 
-/* Styling for headings under indigo theme */
-.indigo-theme h1, .indigo-theme h2, .indigo-theme h3, .indigo-theme h4, .indigo-theme h5, .indigo-theme h6 {
-    color: white !important;
+/* Styling for headings under periwinkle theme */
+.periwinkle-theme h1, .periwinkle-theme h2, .periwinkle-theme h3, .periwinkle-theme h4, .periwinkle-theme h5, .periwinkle-theme h6 {
+    color: #4a4e73 !important;  /* Darker periwinkle for headings */
 }
 
-/* Button styling for indigo theme */
-.indigo-theme button {
-    background-color: #6A4C9C;  /* Indigo button */
-    color: white;
+/* Button styling for periwinkle theme */
+.periwinkle-theme button {
+    background-color: #8a94d1;  /* Soft periwinkle blue button */
+    color: #d2d7f0;  /* Lightest periwinkle for text */
 }
 
-.indigo-theme button:hover {
-    background-color: #5A3D8E;  /* Lighter indigo on hover */
+.periwinkle-theme button:hover {
+    background-color: #7b8fc4;  /* Slightly darker periwinkle on hover */
+    color: #d2d7f0;  /* Keep the light periwinkle text on hover */
 }
 
-/* Input fields under indigo theme */
-.indigo-theme input, .indigo-theme textarea, .indigo-theme select {
-    background-color: #4B0082;  /* Indigo background for inputs */
-    color: #D3C9E5;  /* Light purple text */
-    border: 2px solid #6A4C9C;  /* Indigo border */
+/* Input fields under periwinkle theme */
+.periwinkle-theme input, .periwinkle-theme textarea, .periwinkle-theme select {
+    background-color: #e2e4f1;  /* Very light periwinkle background for inputs */
+    color: #4a4e73;  /* Darker periwinkle for input text */
+    border: 2px solid #8a94d1;  /* Periwinkle border for inputs */
 }
 
-/* Footer styling under indigo theme */
-.indigo-theme footer {
-    background-color: #4B0082; /* Indigo background for footer */
-    color: white;
+/* Footer styling under periwinkle theme */
+.periwinkle-theme footer {
+    background-color: #b5b8d1; /* Soft periwinkle background for footer */
+    color: #333;  /* Dark text for contrast in footer */
 }
