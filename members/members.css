@@ -116,3 +116,39 @@ body {
     background-color: #f7ef9b; /* Light yellow background for footer */
     color: white;
 }
+
+/* === Lime Green Theme === */
+
+/* Lime Green Theme - Bright Lime Green Background */
+.lime-green-theme {
+    background-color: #A8E06E !important;  /* Bright lime green background */
+    color: white !important;  /* White text */
+}
+
+/* Styling for headings under lime green theme */
+.lime-green-theme h1, .lime-green-theme h2, .lime-green-theme h3, .lime-green-theme h4, .lime-green-theme h5, .lime-green-theme h6 {
+    color: white !important;
+}
+
+/* Button styling for lime green theme */
+.lime-green-theme button {
+    background-color: #7DCA4B;  /* Lime green button */
+    color: white;
+}
+
+.lime-green-theme button:hover {
+    background-color: #A9D86E;  /* Lighter lime green on hover */
+}
+
+/* Input fields under lime green theme */
+.lime-green-theme input, .lime-green-theme textarea, .lime-green-theme select {
+    background-color: #A8E06E;  /* Lime green background for inputs */
+    color: #4B6B2F;  /* Dark green text */
+    border: 2px solid #7DCA4B;  /* Lime green border */
+}
+
+/* Footer styling under lime green theme */
+.lime-green-theme footer {
+    background-color: #A8E06E; /* Lime green background for footer */
+    color: white;
+}
