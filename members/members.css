@@ -10,182 +10,211 @@ body {
 }
 
 /* === Purple Theme === */
-
-/* Purple Theme - Light Purple Background */
 .purple-theme {
-    background-color: #D39BF7 !important;  /* Light purple background color */
-    color: white !important;  /* White text color */
+    background-color: #D39BF7 !important;  /* Light purple background */
+    color: white !important;
 }
 
-/* Styling for headings under purple theme */
 .purple-theme h1, .purple-theme h2, .purple-theme h3, .purple-theme h4, .purple-theme h5, .purple-theme h6 {
-    color: white !important; /* White text for headings */
+    color: white !important;
 }
 
-/* Button styling for purple theme */
 .purple-theme button {
-    background-color: #8e44ad;  /* Purple button */
+    background-color: #8e44ad;
     color: white;
 }
 
 .purple-theme button:hover {
-    background-color: #9b59b6;  /* Lighter purple on hover */
+    background-color: #9b59b6;
 }
 
-/* Input fields under purple theme */
 .purple-theme input, .purple-theme textarea, .purple-theme select {
-    background-color: #D39BF7;  /* Light purple background for inputs */
-    color: white;  /* White text in input fields */
-    border: 2px solid #8e44ad;  /* Purple border */
+    background-color: #D39BF7;
+    color: white;
+    border: 2px solid #8e44ad;
 }
 
-/* Footer styling under purple theme */
 .purple-theme footer {
-    background-color: #D39BF7; /* Light purple background for footer */
+    background-color: #D39BF7;
     color: white;
 }
 
-/* === Green Theme === */
-
-/* Green Theme - Soft Green Background */
-.green-theme {
-    background-color: #A2D9CE !important;  /* Soft green background */
-    color: white !important;  /* White text */
-}
-
-/* Styling for headings under green theme */
-.green-theme h1, .green-theme h2, .green-theme h3, .green-theme h4, .green-theme h5, .green-theme h6 {
+/* === Orange Theme === */
+.orange-theme {
+    background-color: #FF7F50 !important;  /* Coral orange background */
     color: white !important;
 }
 
-/* Button styling for green theme */
-.green-theme button {
-    background-color: #27ae60;  /* Green button */
-    color: white;
-}
-
-.green-theme button:hover {
-    background-color: #2ecc71;  /* Lighter green on hover */
-}
-
-/* Input fields under green theme */
-.green-theme input, .green-theme textarea, .green-theme select {
-    background-color: #A2D9CE;  /* Soft green background for inputs */
-    color: #1D6F49;  /* Dark green text */
-    border: 2px solid #27ae60;  /* Green border */
-}
-
-/* Footer styling under green theme */
-.green-theme footer {
-    background-color: #A2D9CE; /* Soft green background for footer */
-    color: white;
-}
-
-/* === Yellow Theme === */
-
-/* Yellow Theme - Light Yellow Background */
-.yellow-theme {
-    background-color: #f7f49b !important;  /* Light yellow background */
-    color: white !important;  /* White text */
-}
-
-/* Styling for headings under yellow theme */
-.yellow-theme h1, .yellow-theme h2, .yellow-theme h3, .yellow-theme h4, .yellow-theme h5, .yellow-theme h6 {
+.orange-theme h1, .orange-theme h2, .orange-theme h3, .orange-theme h4, .orange-theme h5, .orange-theme h6 {
     color: white !important;
 }
 
-/* Button styling for yellow theme */
-.yellow-theme button {
-    background-color: #8e44ad;  /* Purple button */
+.orange-theme button {
+    background-color: #FF6347;
     color: white;
 }
 
-.yellow-theme button:hover {
-    background-color: #9b59b6;  /* Lighter purple on hover */
+.orange-theme button:hover {
+    background-color: #FF4500;
 }
 
-/* Input fields under yellow theme */
-.yellow-theme input, .yellow-theme textarea, .yellow-theme select {
-    background-color: #f7ef9b;  /* Light yellow background for inputs */
-    color: #8e44ad;  /* Purple text */
-    border: 2px solid #8e44ad;  /* Purple border */
+.orange-theme input, .orange-theme textarea, .orange-theme select {
+    background-color: #FF7F50;
+    color: white;
+    border: 2px solid #FF6347;
 }
 
-/* Footer styling under yellow theme */
-.yellow-theme footer {
-    background-color: #f7ef9b; /* Light yellow background for footer */
+.orange-theme footer {
+    background-color: #FF7F50;
+    color: white;
+}
+
+/* === Red Theme === */
+.red-theme {
+    background-color: #E74C3C !important;  /* Bright red background */
+    color: white !important;
+}
+
+.red-theme h1, .red-theme h2, .red-theme h3, .red-theme h4, .red-theme h5, .red-theme h6 {
+    color: white !important;
+}
+
+.red-theme button {
+    background-color: #C0392B;
+    color: white;
+}
+
+.red-theme button:hover {
+    background-color: #9B2C2C;
+}
+
+.red-theme input, .red-theme textarea, .red-theme select {
+    background-color: #E74C3C;
+    color: white;
+    border: 2px solid #C0392B;
+}
+
+.red-theme footer {
+    background-color: #E74C3C;
+    color: white;
+}
+
+/* === Cyan (Green) Theme === */
+.cyan-theme {
+    background-color: #1ABC9C !important;  /* Bright cyan background */
+    color: white !important;
+}
+
+.cyan-theme h1, .cyan-theme h2, .cyan-theme h3, .cyan-theme h4, .cyan-theme h5, .cyan-theme h6 {
+    color: white !important;
+}
+
+.cyan-theme button {
+    background-color: #16A085;
+    color: white;
+}
+
+.cyan-theme button:hover {
+    background-color: #1ABC9C;
+}
+
+.cyan-theme input, .cyan-theme textarea, .cyan-theme select {
+    background-color: #1ABC9C;
+    color: white;
+    border: 2px solid #16A085;
+}
+
+.cyan-theme footer {
+    background-color: #1ABC9C;
     color: white;
 }
 
 /* === Lime Green Theme === */
-
-/* Lime Green Theme - Bright Lime Green Background */
 .lime-green-theme {
     background-color: #A8E06E !important;  /* Bright lime green background */
-    color: white !important;  /* White text */
+    color: white !important;
 }
 
-/* Styling for headings under lime green theme */
 .lime-green-theme h1, .lime-green-theme h2, .lime-green-theme h3, .lime-green-theme h4, .lime-green-theme h5, .lime-green-theme h6 {
     color: white !important;
 }
 
-/* Button styling for lime green theme */
 .lime-green-theme button {
-    background-color: #7DCA4B;  /* Lime green button */
+    background-color: #7DCA4B;
     color: white;
 }
 
 .lime-green-theme button:hover {
-    background-color: #A9D86E;  /* Lighter lime green on hover */
+    background-color: #A9D86E;
 }
 
-/* Input fields under lime green theme */
 .lime-green-theme input, .lime-green-theme textarea, .lime-green-theme select {
-    background-color: #A8E06E;  /* Lime green background for inputs */
-    color: #4B6B2F;  /* Dark green text */
-    border: 2px solid #7DCA4B;  /* Lime green border */
+    background-color: #A8E06E;
+    color: #4B6B2F;
+    border: 2px solid #7DCA4B;
 }
 
-/* Footer styling under lime green theme */
 .lime-green-theme footer {
-    background-color: #A8E06E; /* Lime green background for footer */
+    background-color: #A8E06E;
     color: white;
 }
 
-/* === Periwinkle Theme === */
-
-/* Periwinkle Theme - Soft light purple-blue background */
-.periwinkle-theme {
-    background-color: #9cb3f7 !important;  /* Soft periwinkle background */
-    color: #333 !important;  /* Dark text for contrast */
+/* === Indigo Theme === */
+.indigo-theme {
+    background-color: #4B0082 !important;  /* Indigo background */
+    color: white !important;
 }
 
-/* Styling for headings under periwinkle theme */
-.periwinkle-theme h1, .periwinkle-theme h2, .periwinkle-theme h3, .periwinkle-theme h4, .periwinkle-theme h5, .periwinkle-theme h6 {
-    color: #4a4e73 !important;  /* Darker periwinkle for headings */
+.indigo-theme h1, .indigo-theme h2, .indigo-theme h3, .indigo-theme h4, .indigo-theme h5, .indigo-theme h6 {
+    color: white !important;
 }
 
-/* Button styling for periwinkle theme */
-.periwinkle-theme button {
-    background-color: #8a94d1;  /* Soft periwinkle blue button */
-    color: #d2d7f0;  /* Lightest periwinkle for text */
+.indigo-theme button {
+    background-color: #6A4C9C;
+    color: white;
 }
 
-.periwinkle-theme button:hover {
-    background-color: #7b8fc4;  /* Slightly darker periwinkle on hover */
-    color: #d2d7f0;  /* Keep the light periwinkle text on hover */
+.indigo-theme button:hover {
+    background-color: #5A3D8E;
 }
 
-/* Input fields under periwinkle theme */
-.periwinkle-theme input, .periwinkle-theme textarea, .periwinkle-theme select {
-    background-color: #e2e4f1;  /* Very light periwinkle background for inputs */
-    color: #4a4e73;  /* Darker periwinkle for input text */
-    border: 2px solid #8a94d1;  /* Periwinkle border for inputs */
+.indigo-theme input, .indigo-theme textarea, .indigo-theme select {
+    background-color: #4B0082;
+    color: white;
+    border: 2px solid #6A4C9C;
 }
 
-/* Footer styling under periwinkle theme */
-.periwinkle-theme footer {
-    background-color: #b5b8d1; /* Soft periwinkle background for footer */
-    color: #333;  /* Dark text for contrast in footer */
+.indigo-theme footer {
+    background-color: #4B0082;
+    color: white;
+}
+
+/* === Yellow Theme === */
+.yellow-theme {
+    background-color: #F7F49B !important;  /* Light yellow background */
+    color: white !important;
+}
+
+.yellow-theme h1, .yellow-theme h2, .yellow-theme h3, .yellow-theme h4, .yellow-theme h5, .yellow-theme h6 {
+    color: white !important;
+}
+
+.yellow-theme button {
+    background-color: #F39C12;
+    color: white;
+}
+
+.yellow-theme button:hover {
+    background-color: #E67E22;
+}
+
+.yellow-theme input, .yellow-theme textarea, .yellow-theme select {
+    background-color: #F7F49B;
+    color: #8E44AD;
+    border: 2px solid #F39C12;
+}
+
+.yellow-theme footer {
+    background-color: #F7F49B;
+    color: white;
 }
