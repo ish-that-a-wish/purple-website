@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Correct path to styles.css -->
+    <style>
+        /* Styling for the FUN BUTTON */
+        .fun-button {
+            background-color: #ff69b4;  /* Bright pink color */
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .fun-button:hover {
+            background-color: #ff4d91;  /* Slightly darker pink on hover */
+        }
+    </style>
     <script>
         // Function to display the current time
         function updateTime() {
@@ -43,6 +60,8 @@
         <button class="green" onclick="window.location.href='members/arjit.html';">Arjit</button> <!-- Goes to arjit.html -->
         <button class="indigo" onclick="window.location.href='members/pia.html';">Pia</button> <!-- Goes to pia.html -->
         <button class="purple" onclick="window.location.href='members/ishika.html';">Ishika</button> <!-- Goes to ishika.html -->
+        <!-- FUN BUTTON -->
+        <button class="fun-button" onclick="window.location.href='button.html'">FUN BUTTON</button>
     </div>
 </body>
 </html>
