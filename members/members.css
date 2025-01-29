@@ -11,13 +11,13 @@ body {
 
 /* Yellow Theme */
 .yellow-theme {
-    background-color: #f7f49b !important; /* Slightly darker purple background */
+    background-color: #f7f49b !important; /* Light yellow background */
     color: white !important; /* White text for contrast */
 }
 
-/* Dark Purple Theme */
+/* Purple Theme */
 .purple-theme {
-    background-color: #D39BF7 !important; /* Slightly darker purple background */
+    background-color: #9b59b6 !important; /* Updated to a more vivid purple */
     color: white !important;
 }
 
@@ -29,8 +29,112 @@ body {
 
 /* Styling for headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #ad9a44 !important; /* Slightly darker purple for headings */
+    color: #ad9a44 !important; /* Slightly darker color for headings */
 }
+
+/* Links */
+a {
+    color: #d35400; /* A contrasting color for links (orange) */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e67e22; /* Hover effect for links (lighter orange) */
+}
+
+/* Buttons (for all themes) */
+button {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Yellow Button Style */
+.yellow-theme button {
+    background-color: #8e44ad;
+}
+
+.yellow-theme button:hover {
+    background-color: #9b59b6;
+}
+
+/* Purple Button Style */
+.purple-theme button {
+    background-color: #8e44ad; /* Purple button background */
+}
+
+.purple-theme button:hover {
+    background-color: #9b59b6; /* Lighter purple when hovering */
+}
+
+/* Green Button Style */
+.green-theme button {
+    background-color: #27ae60;
+}
+
+.green-theme button:hover {
+    background-color: #2ecc71;
+}
+
+/* Input fields and form elements */
+input, textarea, select {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #8e44ad;
+    margin: 10px 0;
+}
+
+/* Yellow Input Style */
+.yellow-theme input, .yellow-theme textarea, .yellow-theme select {
+    background-color: #f7ef9b;
+    color: #8e44ad;
+}
+
+/* Purple Input Style */
+.purple-theme input, .purple-theme textarea, .purple-theme select {
+    background-color: #9b59b6; /* Updated purple input fields */
+    color: white; /* White text for contrast */
+}
+
+/* Green Input Style */
+.green-theme input, .green-theme textarea, .green-theme select {
+    background-color: #A2D9CE;
+    color: #1D6F49;
+}
+
+/* Adding some spacing and making sure everything aligns well */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer (optional, if you want a footer) */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Yellow Footer Style */
+.yellow-theme footer {
+    background-color: #f7ef9b;
+}
+
+/* Purple Footer Style */
+.purple-theme footer {
+    background-color: #9b59b6; /* Footer background matches the updated purple */
+}
+
+/* Green Footer Style */
+.green-theme footer {
+    background-color: #A2D9CE;
+}
+
 
 /* Links */
 a {
