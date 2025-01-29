@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Correct path to styles.css -->
+    <script>
+        // Function to display the current time
+        function updateTime() {
+            var currentDate = new Date();
+            var hours = currentDate.getHours();
+            var minutes = currentDate.getMinutes();
+            var seconds = currentDate.getSeconds();
+
+            // Add leading zeros if minutes/seconds are less than 10
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            var timeString = hours + ":" + minutes + ":" + seconds;
+
+            // Display the time
+            document.getElementById("time").innerText = timeString;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+    </script>
 </head>
 <body>
-    <h1>Purple Website</h1>
-    <p>This website is very purple</p>
+    <h1>Our Website</h1>
+    <p>This website is very cool</p>
+
+    <!-- Display the current time -->
+    <p>Current time: <span id="time"></span></p>
 
     <!-- Buttons Section -->
     <div class="buttons">
