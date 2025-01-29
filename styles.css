@@ -28,7 +28,6 @@ a:hover {
 
 /* Buttons (if any) */
 button {
-    background-color: #8e44ad; /* Purple button background */
     color: white;
     font-family: 'Quicksand', sans-serif;
     border: none;
@@ -38,8 +37,31 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+/* Purple Button */
+.purple {
+    background-color: #8e44ad; /* Purple button background */
+}
+
+.purple:hover {
     background-color: #9b59b6; /* Lighter purple when hovering */
+}
+
+/* Yellow Button */
+.yellow {
+    background-color: #f39c12; /* Yellow button background */
+}
+
+.yellow:hover {
+    background-color: #f1c40f; /* Lighter yellow when hovering */
+}
+
+/* Green Button */
+.green {
+    background-color: #27ae60; /* Green button background */
+}
+
+.green:hover {
+    background-color: #2ecc71; /* Lighter green when hovering */
 }
 
 /* Input fields and form elements */
