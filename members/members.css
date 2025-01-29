@@ -9,232 +9,110 @@ body {
     text-align: center;
 }
 
-/* Yellow Theme */
-.yellow-theme {
-    background-color: #f7f49b !important; /* Light yellow background */
-    color: white !important; /* White text for contrast */
-}
+/* === Purple Theme === */
 
-/* Purple Theme */
+/* Purple Theme - Light Purple Background */
 .purple-theme {
-    background-color: #9b59b6 !important; /* Updated to a more vivid purple */
-    color: white !important;
+    background-color: #D39BF7 !important;  /* Light purple background color */
+    color: white !important;  /* White text color */
 }
 
-/* Green Theme */
-.green-theme {
-    background-color: #A2D9CE !important; /* Soft green background */
-    color: white !important;
+/* Styling for headings under purple theme */
+.purple-theme h1, .purple-theme h2, .purple-theme h3, .purple-theme h4, .purple-theme h5, .purple-theme h6 {
+    color: white !important; /* White text for headings */
 }
 
-/* Styling for headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #ad9a44 !important; /* Slightly darker color for headings */
-}
-
-/* Links */
-a {
-    color: #d35400; /* A contrasting color for links (orange) */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e67e22; /* Hover effect for links (lighter orange) */
-}
-
-/* Buttons (for all themes) */
-button {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-/* Yellow Button Style */
-.yellow-theme button {
-    background-color: #8e44ad;
-}
-
-.yellow-theme button:hover {
-    background-color: #9b59b6;
-}
-
-/* Purple Button Style */
+/* Button styling for purple theme */
 .purple-theme button {
-    background-color: #8e44ad; /* Purple button background */
+    background-color: #8e44ad;  /* Purple button */
+    color: white;
 }
 
 .purple-theme button:hover {
-    background-color: #9b59b6; /* Lighter purple when hovering */
+    background-color: #9b59b6;  /* Lighter purple on hover */
 }
 
-/* Green Button Style */
-.green-theme button {
-    background-color: #27ae60;
-}
-
-.green-theme button:hover {
-    background-color: #2ecc71;
-}
-
-/* Input fields and form elements */
-input, textarea, select {
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #8e44ad;
-    margin: 10px 0;
-}
-
-/* Yellow Input Style */
-.yellow-theme input, .yellow-theme textarea, .yellow-theme select {
-    background-color: #f7ef9b;
-    color: #8e44ad;
-}
-
-/* Purple Input Style */
+/* Input fields under purple theme */
 .purple-theme input, .purple-theme textarea, .purple-theme select {
-    background-color: #9b59b6; /* Updated purple input fields */
-    color: white; /* White text for contrast */
+    background-color: #D39BF7;  /* Light purple background for inputs */
+    color: white;  /* White text in input fields */
+    border: 2px solid #8e44ad;  /* Purple border */
 }
 
-/* Green Input Style */
-.green-theme input, .green-theme textarea, .green-theme select {
-    background-color: #A2D9CE;
-    color: #1D6F49;
-}
-
-/* Adding some spacing and making sure everything aligns well */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Footer (optional, if you want a footer) */
-footer {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Yellow Footer Style */
-.yellow-theme footer {
-    background-color: #f7ef9b;
-}
-
-/* Purple Footer Style */
+/* Footer styling under purple theme */
 .purple-theme footer {
-    background-color: #9b59b6; /* Footer background matches the updated purple */
-}
-
-/* Green Footer Style */
-.green-theme footer {
-    background-color: #A2D9CE;
-}
-
-
-/* Links */
-a {
-    color: #d35400; /* A contrasting color for links (orange) */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e67e22; /* Hover effect for links (lighter orange) */
-}
-
-/* Buttons (for all themes) */
-button {
+    background-color: #D39BF7; /* Light purple background for footer */
     color: white;
-    font-family: 'Quicksand', sans-serif;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-/* Yellow Button Style */
-.yellow-theme button {
-    background-color: #8e44ad;
+/* === Green Theme === */
+
+/* Green Theme - Soft Green Background */
+.green-theme {
+    background-color: #A2D9CE !important;  /* Soft green background */
+    color: white !important;  /* White text */
 }
 
-.yellow-theme button:hover {
-    background-color: #9b59b6;
+/* Styling for headings under green theme */
+.green-theme h1, .green-theme h2, .green-theme h3, .green-theme h4, .green-theme h5, .green-theme h6 {
+    color: white !important;
 }
 
-/* Purple Button Style */
-.purple-theme button {
-    background-color: #8e44ad;
-}
-
-.purple-theme button:hover {
-    background-color: #9b59b6;
-}
-
-/* Green Button Style */
+/* Button styling for green theme */
 .green-theme button {
-    background-color: #27ae60;
+    background-color: #27ae60;  /* Green button */
+    color: white;
 }
 
 .green-theme button:hover {
-    background-color: #2ecc71;
+    background-color: #2ecc71;  /* Lighter green on hover */
 }
 
-/* Input fields and form elements */
-input, textarea, select {
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #8e44ad;
-    margin: 10px 0;
-}
-
-/* Yellow Input Style */
-.yellow-theme input, .light-purple-theme textarea, .light-purple-theme select {
-    background-color: #f7ef9b;
-    color: #8e44ad;
-}
-
-/* Purple Input Style */
-.purple-theme input, .dark-purple-theme textarea, .dark-purple-theme select {
-    background-color: #D39BF7;
-    color: #8e44ad;
-}
-
-/* Green Input Style */
+/* Input fields under green theme */
 .green-theme input, .green-theme textarea, .green-theme select {
-    background-color: #A2D9CE;
-    color: #1D6F49;
+    background-color: #A2D9CE;  /* Soft green background for inputs */
+    color: #1D6F49;  /* Dark green text */
+    border: 2px solid #27ae60;  /* Green border */
 }
 
-/* Adding some spacing and making sure everything aligns well */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Footer (optional, if you want a footer) */
-footer {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Yellow Footer Style */
-.yellow-theme footer {
-    background-color: #f7ef9b;
-}
-
-/* Purple Footer Style */
-.purple-theme footer {
-    background-color: #D39BF7;
-}
-
-/* Green Footer Style */
+/* Footer styling under green theme */
 .green-theme footer {
-    background-color: #A2D9CE;
+    background-color: #A2D9CE; /* Soft green background for footer */
+    color: white;
+}
+
+/* === Yellow Theme === */
+
+/* Yellow Theme - Light Yellow Background */
+.yellow-theme {
+    background-color: #f7f49b !important;  /* Light yellow background */
+    color: white !important;  /* White text */
+}
+
+/* Styling for headings under yellow theme */
+.yellow-theme h1, .yellow-theme h2, .yellow-theme h3, .yellow-theme h4, .yellow-theme h5, .yellow-theme h6 {
+    color: white !important;
+}
+
+/* Button styling for yellow theme */
+.yellow-theme button {
+    background-color: #8e44ad;  /* Purple button */
+    color: white;
+}
+
+.yellow-theme button:hover {
+    background-color: #9b59b6;  /* Lighter purple on hover */
+}
+
+/* Input fields under yellow theme */
+.yellow-theme input, .yellow-theme textarea, .yellow-theme select {
+    background-color: #f7ef9b;  /* Light yellow background for inputs */
+    color: #8e44ad;  /* Purple text */
+    border: 2px solid #8e44ad;  /* Purple border */
+}
+
+/* Footer styling under yellow theme */
+.yellow-theme footer {
+    background-color: #f7ef9b; /* Light yellow background for footer */
+    color: white;
 }
