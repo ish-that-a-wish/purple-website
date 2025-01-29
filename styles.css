@@ -26,7 +26,7 @@ a:hover {
     color: #e67e22; /* Hover effect for links (lighter orange) */
 }
 
-/* Buttons (if any) */
+/* General button styles */
 button {
     color: white;
     font-family: 'Quicksand', sans-serif;
@@ -35,33 +35,70 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin: 10px;
 }
 
-/* Purple Button */
-.purple {
-    background-color: #8e44ad; /* Purple button background */
+/* Red Button */
+.red {
+    background-color: #e74c3c; /* Red color */
 }
 
-.purple:hover {
-    background-color: #9b59b6; /* Lighter purple when hovering */
+.red:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Orange Button */
+.orange {
+    background-color: #f39c12; /* Orange color */
+}
+
+.orange:hover {
+    background-color: #e67e22; /* Darker orange */
 }
 
 /* Yellow Button */
 .yellow {
-    background-color: #f39c12; /* Yellow button background */
+    background-color: #f7f49b; /* Yellow color */
 }
 
 .yellow:hover {
-    background-color: #f1c40f; /* Lighter yellow when hovering */
+    background-color: #f1c40f; /* Darker yellow */
 }
 
-/* Green Button */
+/* Green (Cyan) Button */
 .green {
-    background-color: #27ae60; /* Green button background */
+    background-color: #1abc9c; /* Cyan color */
 }
 
 .green:hover {
-    background-color: #2ecc71; /* Lighter green when hovering */
+    background-color: #16a085; /* Darker cyan */
+}
+
+/* Lime Button */
+.lime {
+    background-color: #2ecc71; /* Lime green color */
+}
+
+.lime:hover {
+    background-color: #27ae60; /* Darker lime green */
+}
+
+/* Indigo Button */
+.indigo {
+    background-color: #3f51b5; /* Indigo color */
+}
+
+.indigo:hover {
+    background-color: #2c3e50; /* Darker indigo */
+}
+
+/* Purple Button */
+.purple {
+    background-color: #8e44ad; /* Purple color */
+}
+
+.purple:hover {
+    background-color: #9b59b6; /* Lighter purple */
 }
 
 /* Input fields and form elements */
