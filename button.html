@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Fun</title>
+    <style>
+        /* Styling for the fun page */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .timer-message {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 24px;
+            color: #8e44ad;
+            margin-top: 20px;
+        }
+
+        .fun-button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .fun-button:hover {
+            background-color: #ff4d91;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the FUN BUTTON Page!</h1>
+    <p class="timer-message">Time spent on this page: <span id="time"></span></p>
+
+    <!-- Funny Message Section -->
+    <p class="message" id="message"></p>
+
+    <!-- Go Back Button -->
+    <button class="fun-button" onclick="window.location.href='index.html'">Go Back to the Purple Website</button>
+
+    <script>
+        // Function to track time spent on the page
+        let startTime = Date.now();
+        
+        // Function to update the time every second
+        function updateTime() {
+            let elapsedTime = Date.now() - startTime;
+            let seconds = Math.floor(elapsedTime / 1000); // Convert time to seconds
+            let minutes = Math.floor(seconds / 60);
+            seconds = seconds % 60;
+
+            // Format time to display as MM:SS
+            let timeString = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+            document.getElementById('time').innerText = timeString;
+
+            // Display funny messages based on time spent
+            let message = '';
+            if (seconds < 10) {
+                message = "Wow, you're so quick! Are you a superhero?";
+            } else if (seconds < 30) {
+                message = "Only 30 seconds in? You're just getting started!";
+            } else if (seconds < 60) {
+                message = "One minute? Impressive, but not enough to be a pro!";
+            } else if (seconds < 120) {
+                message = "Two minutes? You're dedicated!";
+            } else if (seconds < 300) {
+                message = "Five minutes! You're living the dream!";
+            } else {
+                message = "Ten minutes in... How long are you planning to stay here? 🤔";
+            }
+            document.getElementById('message').innerText = message;
+        }
+
+        // Update the time and funny messages every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
