@@ -9,14 +9,14 @@ body {
     text-align: center;
 }
 
-/* Light Purple Theme */
-.light-purple-theme {
+/* Yellow Theme */
+.yellow-theme {
     background-color: #f7f49b !important; /* Slightly darker purple background */
     color: white !important; /* White text for contrast */
 }
 
 /* Dark Purple Theme */
-.dark-purple-theme {
+.purple-theme {
     background-color: #D39BF7 !important; /* Slightly darker purple background */
     color: white !important;
 }
@@ -53,21 +53,21 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Light Purple Button Style */
-.light-purple-theme button {
+/* Yellow Button Style */
+.yellow-theme button {
     background-color: #8e44ad;
 }
 
-.light-purple-theme button:hover {
+.yellow-theme button:hover {
     background-color: #9b59b6;
 }
 
-/* Dark Purple Button Style */
-.dark-purple-theme button {
+/* Purple Button Style */
+.purple-theme button {
     background-color: #8e44ad;
 }
 
-.dark-purple-theme button:hover {
+.purple-theme button:hover {
     background-color: #9b59b6;
 }
 
@@ -89,14 +89,14 @@ input, textarea, select {
     margin: 10px 0;
 }
 
-/* Light Purple Input Style */
-.light-purple-theme input, .light-purple-theme textarea, .light-purple-theme select {
+/* Yellow Input Style */
+.yellow-theme input, .light-purple-theme textarea, .light-purple-theme select {
     background-color: #f7ef9b;
     color: #8e44ad;
 }
 
-/* Dark Purple Input Style */
-.dark-purple-theme input, .dark-purple-theme textarea, .dark-purple-theme select {
+/* Purple Input Style */
+.purple-theme input, .dark-purple-theme textarea, .dark-purple-theme select {
     background-color: #D39BF7;
     color: #8e44ad;
 }
@@ -120,13 +120,13 @@ footer {
     text-align: center;
 }
 
-/* Light Purple Footer Style */
-.light-purple-theme footer {
+/* Yellow Footer Style */
+.yellow-theme footer {
     background-color: #f7ef9b;
 }
 
-/* Dark Purple Footer Style */
-.dark-purple-theme footer {
+/* Purple Footer Style */
+.purple-theme footer {
     background-color: #D39BF7;
 }
 
