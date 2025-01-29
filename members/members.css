@@ -152,3 +152,39 @@ body {
     background-color: #A8E06E; /* Lime green background for footer */
     color: white;
 }
+
+/* === Indigo Theme === */
+
+/* Indigo Theme - Deep Indigo Background */
+.indigo-theme {
+    background-color: #4B0082 !important;  /* Indigo background */
+    color: white !important;  /* White text */
+}
+
+/* Styling for headings under indigo theme */
+.indigo-theme h1, .indigo-theme h2, .indigo-theme h3, .indigo-theme h4, .indigo-theme h5, .indigo-theme h6 {
+    color: white !important;
+}
+
+/* Button styling for indigo theme */
+.indigo-theme button {
+    background-color: #6A4C9C;  /* Indigo button */
+    color: white;
+}
+
+.indigo-theme button:hover {
+    background-color: #5A3D8E;  /* Lighter indigo on hover */
+}
+
+/* Input fields under indigo theme */
+.indigo-theme input, .indigo-theme textarea, .indigo-theme select {
+    background-color: #4B0082;  /* Indigo background for inputs */
+    color: #D3C9E5;  /* Light purple text */
+    border: 2px solid #6A4C9C;  /* Indigo border */
+}
+
+/* Footer styling under indigo theme */
+.indigo-theme footer {
+    background-color: #4B0082; /* Indigo background for footer */
+    color: white;
+}
