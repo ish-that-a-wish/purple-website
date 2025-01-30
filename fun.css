@@ -21,6 +21,7 @@ body {
 
 /* Styling for header */
 h1 {
+    font-family: 'Quicksand', sans-serif;
     color: #3e2a47; /* Slightly darker color for title */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft text shadow */
     font-size: 36px;
@@ -28,6 +29,7 @@ h1 {
 
 /* Timer Message Styling */
 .timer-message {
+    font-family: 'Quicksand', sans-serif;
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
@@ -36,6 +38,7 @@ h1 {
 
 /* Fun Button Styling */
 .fun-button {
+    font-family: 'Quicksand', sans-serif;
     background-color: #ffb6c1; /* Soft pastel pink */
     color: white;
     padding: 15px 30px;
@@ -48,12 +51,14 @@ h1 {
 }
 
 .fun-button:hover {
+    font-family: 'Quicksand', sans-serif;
     background-color: #ff89b8; /* Slightly darker pink on hover */
     transform: translateY(-3px); /* Button lift effect */
 }
 
 /* Game Buttons Styling */
 .game-button {
+    font-family: 'Quicksand', sans-serif;
     margin-top: 30px;
     font-size: 18px;
     padding: 20px 40px;
@@ -66,12 +71,14 @@ h1 {
 }
 
 .game-button:hover {
+    font-family: 'Quicksand', sans-serif;
     background-color: #f7c1a7; /* Slightly darker pastel peach */
     transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* Fun Fact Styling */
 .fun-fact {
+    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     margin-top: 20px;
     font-weight: bold;
@@ -80,6 +87,7 @@ h1 {
 
 /* Floating Points Section */
 #points {
+    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #2ecc71;
@@ -96,6 +104,7 @@ h1 {
 
 /* Floating box for fun fact button */
 .floating-box {
+    font-family: 'Quicksand', sans-serif;
     position: fixed;
     top: 10%;
     left: 50%;
