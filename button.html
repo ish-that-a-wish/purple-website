@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Fun</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Correct path to styles.css -->
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Styling for the fun page */
         body {
             font-family: 'Quicksand', sans-serif;
             text-align: center;
             padding: 50px;
-            background: linear-gradient(135deg, #f0f8ff, #add8e6); /* Soft light background */
+            background: linear-gradient(135deg, #f0f8ff, #add8e6);
+            background-size: 400% 400%; /* Makes the background flow */
             color: #333; /* Dark text for visibility */
-            transition: background 1s ease; /* Smooth background color change */
+            transition: background 1s ease;
+            animation: gradientFlow 10s ease infinite; /* Background gradient flow */
+        }
+
+        @keyframes gradientFlow {
+            0% { background: linear-gradient(135deg, #f0f8ff, #add8e6); }
+            50% { background: linear-gradient(135deg, #add8e6, #f0f8ff); }
+            100% { background: linear-gradient(135deg, #f0f8ff, #add8e6); }
+        }
+
+        h1 {
+            color: #2c3e50; /* Dark color for title */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better visibility */
         }
 
         .timer-message {
@@ -43,19 +56,38 @@
             background-color: #ff4d91;
         }
 
-        /* Style for the click counter game */
-        .counter-button {
+        /* Game Buttons Styling */
+        .game-button {
             margin-top: 30px;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .counter-button {
             background-color: #2ecc71;
         }
 
-        /* Style for color challenge section */
         .color-challenge-button {
-            margin-top: 30px;
             background-color: #3498db;
         }
 
-        /* Style for fun fact display */
+        .reaction-button {
+            background-color: #f39c12;
+        }
+
+        .memory-game-button {
+            background-color: #9b59b6;
+        }
+
+        /* Space between games */
+        .game-container {
+            margin-bottom: 40px;
+        }
+
+        /* Fun Fact Display */
         .fun-fact {
             font-size: 18px;
             margin-top: 20px;
@@ -63,32 +95,27 @@
             color: #e74c3c;
         }
 
-        /* Memory game section */
-        .memory-game-button {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            font-size: 18px;
-        }
-
-        /* Reaction Time Game */
-        .reaction-button {
-            margin-top: 20px;
-            background-color: #f39c12;
-            padding: 20px;
-            font-size: 18px;
-        }
-
         .reaction-time {
             font-size: 20px;
             font-weight: bold;
             color: #e74c3c;
+        }
+
+        /* Points Section */
+        #points {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2ecc71;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to the FUN BUTTON Page!</h1>
     <p class="timer-message">Time spent on this page: <span id="time"></span></p>
+
+    <!-- Points Section -->
+    <p id="points">Points: 0</p>
 
     <!-- Funny Message Section -->
     <p class="message" id="message"></p>
@@ -97,19 +124,41 @@
     <button class="fun-button" onclick="window.location.href='index.html'">Go Back to the Purple Website</button>
 
     <!-- Click Counter Game Section -->
-    <p id="click-count-message">Click as many times as you can in 10 seconds!</p>
-    <button id="click-button" class="fun-button">Click Me!</button>
-    <p id="click-counter">Clicks: 0</p>
+    <div class="game-container">
+        <p id="click-count-message">Click as many times as you can in 10 seconds!</p>
+        <button id="click-button" class="game-button counter-button">Click Me!</button>
+        <p id="click-counter">Clicks: 0</p>
+    </div>
 
     <!-- Color Change Challenge Section -->
-    <p id="color-challenge-message">Try to click when the button turns green!</p>
-    <button class="color-challenge-button" id="color-challenge-button">Click when it's green!</button>
+    <div class="game-container">
+        <p id="color-challenge-message">Try to click when the button turns green!</p>
+        <button class="game-button color-challenge-button" id="color-challenge-button">Click when it's green!</button>
+    </div>
+
+    <!-- Reaction Time Game Section -->
+    <div class="game-container">
+        <p id="reaction-time-message">Wait for the button to turn green, then click as fast as you can!</p>
+        <button class="game-button reaction-button" id="reaction-button">Click Me!</button>
+        <p id="reaction-time">Reaction Time: --</p>
+    </div>
+
+    <!-- Memory Game Section -->
+    <div class="game-container">
+        <p id="memory-game-message">Remember this sequence!</p>
+        <div id="memory-game-buttons"></div>
+        <button class="game-button memory-game-button" onclick="startMemoryGame()">Start Memory Game</button>
+    </div>
 
     <!-- Fun Fact Section -->
-    <button id="fun-fact-button" class="fun-button">Tell Me a Fun Fact!</button>
-    <p id="fun-fact" class="fun-fact"></p>
+    <div class="game-container">
+        <button id="fun-fact-button" class="game-button">Tell Me a Fun Fact!</button>
+        <p id="fun-fact" class="fun-fact"></p>
+    </div>
 
     <script>
+        let points = 0;  // Track the points
+
         // Function to track time spent on the page
         let startTime = Date.now();
         
@@ -145,6 +194,11 @@
         // Update the time and funny messages every second
         setInterval(updateTime, 1000);
 
+        // Points display update
+        function updatePoints() {
+            document.getElementById('points').innerText = `Points: ${points}`;
+        }
+
         // Click Counter Game
         let clickCount = 0;
         let clickStartTime = Date.now();
@@ -162,6 +216,8 @@
         setInterval(() => {
             if (Date.now() - clickStartTime > clickTimeLimit) {
                 clickCountMessage.innerText = `Time's up! You clicked ${clickCount} times!`;
+                points += clickCount; // Award points based on clicks
+                updatePoints();
                 clickButton.disabled = true;
             }
         }, 1000);
@@ -186,6 +242,8 @@
 
         colorChallengeButton.addEventListener("click", function() {
             if (colorChallengeButton.style.backgroundColor === targetColor) {
+                points += 10; // Award points for success
+                updatePoints();
                 alert("Great job! You clicked when the button was green!");
             } else {
                 alert("Oops! Try again!");
@@ -194,6 +252,85 @@
 
         // Start button color change every 3 seconds
         colorChangeInterval = setInterval(changeButtonColor, 3000);
+
+        // Reaction Time Game
+        const reactionButton = document.getElementById("reaction-button");
+        const reactionMessage = document.getElementById("reaction-time-message");
+        const reactionTimeDisplay = document.getElementById("reaction-time");
+        let startReactionTime, endReactionTime;
+
+        reactionButton.addEventListener("click", function() {
+            if (reactionButton.style.backgroundColor === "green") {
+                endReactionTime = Date.now();
+                let reactionTime = endReactionTime - startReactionTime;
+                reactionTimeDisplay.innerText = `Reaction Time: ${reactionTime} ms`;
+                points += Math.max(0, 1000 - reactionTime); // Award points based on speed
+                updatePoints();
+                alert("Good job! You reacted quickly!");
+                reactionButton.style.backgroundColor = "#f39c12"; // Reset color
+            }
+        });
+
+        function changeReactionButtonColor() {
+            reactionButton.style.backgroundColor = "green";
+            startReactionTime = Date.now();
+            reactionMessage.innerText = "Click when it's green!";
+        }
+
+        setTimeout(changeReactionButtonColor, Math.floor(Math.random() * 5000) + 2000); // Random delay
+
+        // Memory Game Section (for fun)
+        let memorySequence = [];
+        let userSequence = [];
+        let memoryIndex = 0;
+
+        function startMemoryGame() {
+            memorySequence = [];
+            userSequence = [];
+            memoryIndex = 0;
+            generateSequence();
+        }
+
+        function generateSequence() {
+            let colors = ["#ff69b4", "#3498db", "#2ecc71", "#9b59b6"];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            memorySequence.push(randomColor);
+
+            // Show sequence to user
+            displaySequence();
+        }
+
+        function displaySequence() {
+            let i = 0;
+            let interval = setInterval(() => {
+                const button = document.createElement("button");
+                button.style.backgroundColor = memorySequence[i];
+                button.style.width = "50px";
+                button.style.height = "50px";
+                button.style.margin = "10px";
+                document.getElementById("memory-game-buttons").appendChild(button);
+
+                button.addEventListener("click", function() {
+                    userSequence.push(button.style.backgroundColor);
+                    if (userSequence[userSequence.length - 1] !== memorySequence[userSequence.length - 1]) {
+                        alert("Wrong sequence! Try again.");
+                        points = Math.max(0, points - 5); // Deduct points for failure
+                        updatePoints();
+                    }
+
+                    if (userSequence.length === memorySequence.length) {
+                        points += 10; // Award points for correct sequence
+                        updatePoints();
+                        alert("Great job! You remembered the sequence.");
+                    }
+                });
+
+                i++;
+                if (i >= memorySequence.length) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
 
         // Fun Fact Feature
         const funFactButton = document.getElementById("fun-fact-button");
@@ -211,19 +348,6 @@
             const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
             funFactDisplay.innerText = randomFact;
         });
-
-        // Background Color Change
-        let backgroundColorInterval;
-        const colors = ["#f0f8ff", "#add8e6", "#d3d3d3", "#f5f5dc", "#faebd7"]; // Lighter colors
-        let colorIndex = 0;
-
-        function changeBackgroundColor() {
-            document.body.style.background = colors[colorIndex];
-            colorIndex = (colorIndex + 1) % colors.length; // Loop through the colors
-        }
-
-        // Change background color every 5 seconds
-        backgroundColorInterval = setInterval(changeBackgroundColor, 5000);
     </script>
 </body>
 </html>
