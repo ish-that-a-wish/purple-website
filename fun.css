@@ -3,7 +3,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     padding: 50px;
-    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    background: linear-gradient(135deg, #f9d7ff, #f7a8d6, #a2d5f2, #f7e3b4); /* Soft pastel gradient */
     background-size: 400% 400%; /* Makes the background flow */
     color: #333; /* Dark text for visibility */
     transition: background 1s ease;
@@ -12,57 +12,62 @@ body {
 
 /* Keyframes for background gradient animation */
 @keyframes gradientFlow {
-    0% { background: linear-gradient(135deg, #f0f8ff, #add8e6, #f39c12, #2ecc71); }
-    25% { background: linear-gradient(135deg, #add8e6, #f39c12, #2ecc71, #9b59b6); }
-    50% { background: linear-gradient(135deg, #f39c12, #2ecc71, #9b59b6, #3498db); }
-    75% { background: linear-gradient(135deg, #2ecc71, #9b59b6, #3498db, #f0f8ff); }
-    100% { background: linear-gradient(135deg, #9b59b6, #3498db, #f0f8ff, #add8e6); }
+    0% { background: linear-gradient(135deg, #f9d7ff, #f7a8d6, #a2d5f2, #f7e3b4); }
+    25% { background: linear-gradient(135deg, #f7a8d6, #a2d5f2, #f7e3b4, #f9d7ff); }
+    50% { background: linear-gradient(135deg, #a2d5f2, #f7e3b4, #f9d7ff, #f7a8d6); }
+    75% { background: linear-gradient(135deg, #f7e3b4, #f9d7ff, #f7a8d6, #a2d5f2); }
+    100% { background: linear-gradient(135deg, #f7a8d6, #a2d5f2, #f7e3b4, #f9d7ff); }
 }
 
 /* Styling for header */
 h1 {
-    color: #2c3e50; /* Dark color for title */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better visibility */
+    color: #3e2a47; /* Slightly darker color for title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft text shadow */
+    font-size: 36px;
 }
 
 /* Timer Message Styling */
 .timer-message {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
+    color: #7f7f7f;
 }
 
-/* Message Styling */
-.message {
-    font-size: 24px;
-    color: #8e44ad;
-    margin-top: 20px;
-}
-
-/* Styling for the fun button */
+/* Fun Button Styling */
 .fun-button {
-    background-color: #ff69b4;
+    background-color: #ffb6c1; /* Soft pastel pink */
     color: white;
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 22px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .fun-button:hover {
-    background-color: #ff4d91;
+    background-color: #ff89b8; /* Slightly darker pink on hover */
+    transform: translateY(-3px); /* Button lift effect */
 }
 
 /* Game Buttons Styling */
 .game-button {
     margin-top: 30px;
     font-size: 18px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20px 40px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #ffebd2; /* Pastel peach */
+    border: 2px solid #f3c2a1; /* Light border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+}
+
+.game-button:hover {
+    background-color: #f7c1a7; /* Slightly darker pastel peach */
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* Fun Fact Styling */
@@ -86,6 +91,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 100;
+    color: white;
 }
 
 /* Floating box for fun fact button */
