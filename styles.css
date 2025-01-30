@@ -5,7 +5,7 @@
 body {
     font-family: 'Quicksand', sans-serif !important;
     background-color: #EBE8FC !important; /* Light purple background */
-    color: white !important; /* White text for contrast */
+    color: grey !important; /* White text for contrast */
     margin: 0;
     padding: 0;
     text-align: center;
