@@ -20,13 +20,19 @@ body {
 /* Background Gradient Animation */
 @keyframes backgroundShift {
     0% {
-        background: linear-gradient(135deg, #e4a3ff, #76c2f5, #9b59b6, #2ecc71);
+        background: linear-gradient(135deg, #f8c8d8, #f6e0b6, #c0f0a3, #a3c9f9, #d8a7e0, #f7b2f9, #f7c2a1); /* Pastel rainbow starting point */
+    }
+    25% {
+        background: linear-gradient(135deg, #f7c2a1, #f6e0b6, #a3c9f9, #a3c9f9, #c0f0a3, #d8a7e0, #f8c8d8); /* Smooth color shift */
     }
     50% {
-        background: linear-gradient(135deg, #2ecc71, #f39c12, #e4a3ff, #16a085);
+        background: linear-gradient(135deg, #a3c9f9, #c0f0a3, #f8c8d8, #f6e0b6, #d8a7e0, #f7c2a1, #f7b2f9); /* Smooth pastel rainbow transition */
+    }
+    75% {
+        background: linear-gradient(135deg, #f6e0b6, #f7b2f9, #f7c2a1, #a3c9f9, #c0f0a3, #f8c8d8, #d8a7e0); /* Soft pastel rainbow transition */
     }
     100% {
-        background: linear-gradient(135deg, #e4a3ff, #3498db, #9b59b6, #2ecc71);
+        background: linear-gradient(135deg, #f7c2a1, #a3c9f9, #d8a7e0, #c0f0a3, #f8c8d8, #f7b2f9, #f6e0b6); /* End of the transition */
     }
 }
 
