@@ -4,127 +4,169 @@
 /* General body styling */
 body {
     font-family: 'Quicksand', sans-serif !important;
-    background-color: #EBE8FC !important; /* Light purple background */
+    background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
     color: grey !important; /* White text for contrast */
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: backgroundShift 10s ease infinite; /* Smooth background shift */
+}
+
+/* Background Gradient Animation */
+@keyframes backgroundShift {
+    0% {
+        background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
+    }
+    50% {
+        background: linear-gradient(135deg, #2ecc71, #f39c12, #8e44ad, #16a085);
+    }
+    100% {
+        background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
+    }
 }
 
 /* Styling for headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #8e44ad !important; /* Slightly darker purple for headings */
+h1 {
+    color: white !important; /* White text for heading */
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
 }
 
-/* Links */
-a {
-    color: #d35400; /* A contrasting color for links (orange) */
-    text-decoration: none;
+/* Styling for the time display */
+#time {
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-a:hover {
-    color: #e67e22; /* Hover effect for links (lighter orange) */
+/* Button container */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 /* General button styles */
 button {
     font-family: 'Quicksand', sans-serif;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: all 0.3s ease;
     margin: 10px;
     font-weight: bold; /* Make the text bold */
     color: white; /* Default text color for all buttons */
+    position: relative;
 }
 
-/* Red Button */
+/* Orbit animation for buttons */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button:hover {
+    animation: orbit 3s linear infinite; /* Buttons will rotate on hover */
+}
+
+/* Button Color Styling */
 .red {
-    background-color: #e74c3c; /* Red color */
+    background-color: #e74c3c;
 }
 
 .red:hover {
-    background-color: #c0392b; /* Darker red */
+    background-color: #c0392b;
 }
 
-/* Orange Button */
 .orange {
-    background-color: #f39c12; /* Orange color */
+    background-color: #f39c12;
 }
 
 .orange:hover {
-    background-color: #e67e22; /* Darker orange */
+    background-color: #e67e22;
 }
 
-/* Yellow Button */
 .yellow {
-    background-color: #f7f49b; /* Yellow color */
+    background-color: #f7f49b;
 }
 
 .yellow:hover {
-    background-color: #f1c40f; /* Darker yellow */
+    background-color: #f1c40f;
 }
 
-/* Green (Cyan) Button */
 .green {
-    background-color: #1abc9c; /* Cyan color */
+    background-color: #1abc9c;
 }
 
 .green:hover {
-    background-color: #16a085; /* Darker cyan */
+    background-color: #16a085;
 }
 
-/* Lime Button */
 .lime {
-    background-color: #2ecc71; /* Lime green color */
+    background-color: #2ecc71;
 }
 
 .lime:hover {
-    background-color: #27ae60; /* Darker lime green */
+    background-color: #27ae60;
 }
 
-/* Indigo Button */
 .indigo {
-    background-color: #3f51b5; /* Indigo color */
+    background-color: #3f51b5;
 }
 
 .indigo:hover {
-    background-color: #2c3e50; /* Darker indigo */
+    background-color: #2c3e50;
 }
 
-/* Purple Button */
 .purple {
-    background-color: #8e44ad; /* Purple color */
+    background-color: #8e44ad;
 }
 
 .purple:hover {
-    background-color: #9b59b6; /* Lighter purple */
+    background-color: #9b59b6;
 }
 
-
-/* Input fields and form elements */
-input, textarea, select {
-    font-family: 'Quicksand', sans-serif;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #8e44ad;
-    margin: 10px 0;
-    background-color: #EBE8FC; /* Light purple background */
-    color: #8e44ad;
-}
-
-/* Adding some spacing and making sure everything aligns well */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Footer (optional, if you want a footer) */
-footer {
-    background-color: #EBE8FC; /* Light purple background */
+/* FUN BUTTON special styling */
+.fun-button {
+    background-color: #ff69b4;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.fun-button:hover {
+    background-color: #ff4d91;
+    transform: scale(1.1); /* Slightly enlarge the FUN BUTTON on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #time {
+        font-size: 30px;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
 }
