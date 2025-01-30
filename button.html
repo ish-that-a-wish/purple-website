@@ -23,16 +23,22 @@
     </div>
 
     <script>
-        // JavaScript to gradually shift the gradient background with more intermediate colors
+        // JavaScript to gradually shift the gradient background with 10 color stops
 
-        // Add more gradual gradient colors for smooth transitions
+        // Gradual gradient colors for smooth transitions
         let gradientColors = [
-            ['#f9d7ff', '#f7a8d6', '#a2d5f2', '#f7e3b4'],  // Starting gradient
-            ['#f9d7ff', '#f4a9e0', '#a3d7f2', '#f7e1b7'],  // Light transition
-            ['#f5a9d6', '#a3c9f2', '#f6e1b4', '#f9d7ff'],  // Soft pastels in between
-            ['#f6a8d9', '#a2c8f2', '#f5e0b4', '#f8d8ff'],  // Another soft pastel gradient
-            ['#f8d6ff', '#f7b1e3', '#a2d5f4', '#f7e1b3'],  // Gradual color movement
-            ['#f7e3b4', '#f9d7ff', '#f7a8d6', '#a2d5f2']   // Final transition
+            // Gradient 1 (starting colors)
+            ['#f9d7ff', '#f9d0f6', '#f7a8d6', '#f7c4e4', '#f7b0d0', '#a2d5f2', '#c1e2f5', '#b5d8f4', '#f7e3b4', '#f6d0ff'],
+            // Gradient 2 (soft pastels)
+            ['#f8d8ff', '#f6a8e4', '#f7c2e9', '#f5a1db', '#a3d5f3', '#f7e1c0', '#a1d4f3', '#d1c9f6', '#ffecb3', '#c1e2f5'],
+            // Gradient 3 (lighter hues)
+            ['#ffb3ff', '#f0c7ff', '#e8a8e5', '#f5c6c6', '#ffd1ff', '#a2c9f6', '#f9c9f7', '#d3b6ff', '#ffb5b5', '#c5d7f5'],
+            // Gradient 4 (even softer pastels)
+            ['#f7e6f5', '#ffb8d4', '#a2d5f2', '#d8b3f9', '#f5a1db', '#f7c3e5', '#f9d1ff', '#f7e3d4', '#e3e1ff', '#c6d9f6'],
+            // Gradient 5 (another smooth transition)
+            ['#f6c9f5', '#f5e4ff', '#c9f2ff', '#f7b8d7', '#e8c2e5', '#d1c9f6', '#f7f1e0', '#ffb5db', '#a2c9f5', '#f7b8e3'],
+            // Gradient 6 (pastels with warm tones)
+            ['#f9d7ff', '#ffccf5', '#f6c1db', '#ff99ff', '#a2d5f3', '#d8c7ff', '#d9b3ff', '#ffb3e5', '#f7f0ff', '#f7c9db']
         ];
 
         let currentIndex = 0; // Start from the first gradient
