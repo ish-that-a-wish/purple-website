@@ -3,41 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        // Function to display the current time in AM/PM format
-        function updateTime() {
-            var currentDate = new Date();
-            var hours = currentDate.getHours();
-            var minutes = currentDate.getMinutes();
-            var seconds = currentDate.getSeconds();
-            var ampm = hours >= 12 ? 'PM' : 'AM';
-
-            // Convert to 12-hour format
-            hours = hours % 12;
-            hours = hours ? hours : 12;  // Adjust 0 hours to 12 for AM
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-
-            var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
-
-            // Display the time
-            document.getElementById("time").innerText = timeString;
-        }
-
-        // Update time every second
-        setInterval(updateTime, 1000);
-    </script>
+    <title>Pastel Rainbow Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your updated CSS file -->
 </head>
 <body>
-    <h1>Our Website</h1>
-    <p>This website is very cool</p>
+    <h1>Our Stylish Pastel Website</h1>
+    <p>This is a site full of fun buttons and cool features!</p>
 
     <!-- Display the current time -->
     <p>Current time: <span id="time"></span></p>
 
-    <!-- Buttons Section -->
+    <!-- Button Section -->
     <div class="buttons">
         <button class="red" onclick="window.location.href='members/rishi.html';">Rishi</button>
         <button class="orange" onclick="window.location.href='members/hridhaan.html';">Hridhaan</button>
@@ -45,9 +21,22 @@
         <button class="lime" onclick="window.location.href='members/ishan.html';">Ishan</button>
         <button class="green" onclick="window.location.href='members/arjit.html';">Arjit</button>
         <button class="indigo" onclick="window.location.href='members/pia.html';">Pia</button>
-        <button class="purple" onclick="window.location.href='members/ishika.html';">Ishika</button>
-        <!-- FUN BUTTON -->
-        <button class="fun-button" onclick="window.location.href='button.html'">FUN BUTTON</button>
+        <button class="purple" onclick="window.location.href='members/ayesha.html';">Ayesha</button>
     </div>
+
+    <!-- Fun Button -->
+    <button class="fun-button">Fun Button</button>
+
+    <script>
+        // JavaScript to update the time
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateTime, 1000); // Update every second
+    </script>
 </body>
 </html>
