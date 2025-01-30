@@ -21,20 +21,30 @@
         .fun-button:hover {
             background-color: #ff4d91;  /* Slightly darker pink on hover */
         }
+
+        /* Styling for time display */
+        #time {
+            font-size: 36px;  /* Increased font size */
+            font-weight: bold;
+            color: #2c3e50;  /* Dark color for contrast */
+        }
     </style>
     <script>
-        // Function to display the current time
+        // Function to display the current time in AM/PM format
         function updateTime() {
             var currentDate = new Date();
             var hours = currentDate.getHours();
             var minutes = currentDate.getMinutes();
             var seconds = currentDate.getSeconds();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
 
-            // Add leading zeros if minutes/seconds are less than 10
+            // Convert to 12-hour format
+            hours = hours % 12;
+            hours = hours ? hours : 12;  // Adjust 0 hours to 12 for AM
             minutes = minutes < 10 ? '0' + minutes : minutes;
             seconds = seconds < 10 ? '0' + seconds : seconds;
 
-            var timeString = hours + ":" + minutes + ":" + seconds;
+            var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
 
             // Display the time
             document.getElementById("time").innerText = timeString;
