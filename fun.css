@@ -29,6 +29,7 @@ h1 {
 
 /* Fun Button Styling */
 .fun-button {
+    font-family: 'Quicksand', sans serif;
     background-color: #ffb6c1; /* Soft pastel pink */
     color: white;
     padding: 15px 30px;
@@ -47,6 +48,7 @@ h1 {
 
 /* Game Buttons Styling */
 .game-button {
+    font-family: 'Quicksand', sans serif;
     margin-top: 30px;
     font-size: 18px;
     padding: 20px 40px;
