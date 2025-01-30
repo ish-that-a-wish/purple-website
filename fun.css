@@ -7,10 +7,22 @@ body {
     text-align: center;
     padding: 50px;
     background: linear-gradient(135deg, #f9d7ff, #f7a8d6, #a2d5f2, #f7e3b4); /* Soft pastel gradient */
-    background-size: 400% 400%; /* Makes the background flow */
+    background-size: 100% 100%; /* Makes the background flow */
     color: #333; /* Dark text for visibility */
     transition: background 1s ease; /* Transition for smooth gradient change */
+    animation: gradientFlow 10s ease infinite; /* Background gradient flow */
+
 }
+
+/* Ensure the body takes up the full viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 /* Styling for header */
 h1 {
