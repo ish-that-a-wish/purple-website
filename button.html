@@ -71,15 +71,15 @@
 
             // Display funny messages based on time spent
             let message = '';
-            if (seconds < 5) {
+            if (seconds < 10) {
                 message = "Hey, what's up?";
-            } else if (seconds < 10) {
-                message = "Only 10 seconds in? You're just getting started!";
             } else if (seconds < 30) {
-                message = "Half a minute? Impressive, but not enough to be a pro.";
+                message = "Only 10 seconds in? You're just getting started!";
             } else if (seconds < 60) {
-                message = "One minute? You're dedicated!";
+                message = "Half a minute? Impressive, but not enough to be a pro.";
             } else if (seconds < 90) {
+                message = "One minute? You're dedicated!";
+            } else if (seconds < 120) {
                 message = "One and a half minutes! You're living the dream!";
             } else {
                 message = "Two minutes in... How long are you planning to stay here? 🤔";
