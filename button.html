@@ -39,6 +39,26 @@
         .fun-button:hover {
             background-color: #ff4d91;
         }
+
+        /* Style for the click counter game */
+        .counter-button {
+            margin-top: 30px;
+            background-color: #2ecc71;
+        }
+
+        /* Style for color challenge section */
+        .color-challenge-button {
+            margin-top: 30px;
+            background-color: #3498db;
+        }
+
+        /* Style for fun fact display */
+        .fun-fact {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
     </style>
 </head>
 <body>
@@ -50,6 +70,19 @@
 
     <!-- Go Back Button -->
     <button class="fun-button" onclick="window.location.href='index.html'">Go Back to the Purple Website</button>
+
+    <!-- Click Counter Game Section -->
+    <p id="click-count-message">Click as many times as you can in 10 seconds!</p>
+    <button id="click-button" class="fun-button">Click Me!</button>
+    <p id="click-counter">Clicks: 0</p>
+
+    <!-- Color Change Challenge Section -->
+    <p id="color-challenge-message">Try to click when the background is green!</p>
+    <button class="color-challenge-button" id="color-challenge-button">Click when it's green!</button>
+
+    <!-- Fun Fact Section -->
+    <button id="fun-fact-button" class="fun-button">Tell Me a Fun Fact!</button>
+    <p id="fun-fact" class="fun-fact"></p>
 
     <script>
         // Function to track time spent on the page
@@ -86,6 +119,73 @@
 
         // Update the time and funny messages every second
         setInterval(updateTime, 1000);
+
+        // Click Counter Game
+        let clickCount = 0;
+        let clickStartTime = Date.now();
+        let clickTimeLimit = 10000; // 10 seconds
+
+        const clickButton = document.getElementById("click-button");
+        const clickCounter = document.getElementById("click-counter");
+        const clickCountMessage = document.getElementById("click-count-message");
+
+        clickButton.addEventListener("click", function() {
+            clickCount++;
+            clickCounter.innerText = `Clicks: ${clickCount}`;
+        });
+
+        setInterval(() => {
+            if (Date.now() - clickStartTime > clickTimeLimit) {
+                clickCountMessage.innerText = `Time's up! You clicked ${clickCount} times!`;
+                clickButton.disabled = true;
+            }
+        }, 1000);
+
+        // Color Change Challenge Game
+        const colorChallengeButton = document.getElementById("color-challenge-button");
+        const colorChallengeMessage = document.getElementById("color-challenge-message");
+
+        let colorChangeInterval;
+        let targetColor = "green"; // The color user needs to wait for
+
+        function changeBackgroundColor() {
+            const colors = ["red", "green", "blue", "yellow", "purple"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+
+            if (randomColor === targetColor) {
+                colorChallengeMessage.innerText = `It's ${targetColor}! Click now!`;
+                colorChallengeButton.disabled = false;
+            }
+        }
+
+        colorChallengeButton.addEventListener("click", function() {
+            if (document.body.style.backgroundColor === targetColor) {
+                alert("Great job! You clicked when the background was green!");
+            } else {
+                alert("Oops! Try again!");
+            }
+        });
+
+        // Start color change every 3 seconds
+        colorChangeInterval = setInterval(changeBackgroundColor, 3000);
+
+        // Fun Fact Feature
+        const funFactButton = document.getElementById("fun-fact-button");
+        const funFactDisplay = document.getElementById("fun-fact");
+
+        const funFacts = [
+            "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old!",
+            "A group of flamingos is called a 'flamboyance'.",
+            "Bananas are berries, but strawberries aren't!",
+            "The Eiffel Tower can be 15 cm taller during the summer because of thermal expansion.",
+            "A day on Venus is longer than a year on Venus."
+        ];
+
+        funFactButton.addEventListener("click", function() {
+            const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+            funFactDisplay.innerText = randomFact;
+        });
     </script>
 </body>
 </html>
