@@ -4,7 +4,7 @@
 /* General body styling */
 body {
     font-family: 'Quicksand', sans-serif !important;
-    background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
+    background: linear-gradient(135deg, #e4a3ff, #3498db, #9b59b6, #2ecc71);
     color: grey !important; /* White text for contrast */
     margin: 0;
     padding: 0;
@@ -20,13 +20,13 @@ body {
 /* Background Gradient Animation */
 @keyframes backgroundShift {
     0% {
-        background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
+        background: linear-gradient(135deg, #e4a3ff, #76c2f5, #9b59b6, #2ecc71);
     }
     50% {
-        background: linear-gradient(135deg, #2ecc71, #f39c12, #8e44ad, #16a085);
+        background: linear-gradient(135deg, #2ecc71, #f39c12, #e4a3ff, #16a085);
     }
     100% {
-        background: linear-gradient(135deg, #8e44ad, #3498db, #9b59b6, #2ecc71);
+        background: linear-gradient(135deg, #e4a3ff, #3498db, #9b59b6, #2ecc71);
     }
 }
 
@@ -131,7 +131,7 @@ button:hover {
 }
 
 .purple {
-    background-color: #8e44ad;
+    background-color: #e4a3ff;
 }
 
 .purple:hover {
