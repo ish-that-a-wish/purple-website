@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    background-size: 400% 400%; /* Makes the background flow */
+    color: #333; /* Dark text for visibility */
+    transition: background 1s ease;
+    animation: gradientFlow 10s ease infinite; /* Background gradient flow */
+}
+
+/* Keyframes for background gradient animation */
+@keyframes gradientFlow {
+    0% { background: linear-gradient(135deg, #f0f8ff, #add8e6, #f39c12, #2ecc71); }
+    25% { background: linear-gradient(135deg, #add8e6, #f39c12, #2ecc71, #9b59b6); }
+    50% { background: linear-gradient(135deg, #f39c12, #2ecc71, #9b59b6, #3498db); }
+    75% { background: linear-gradient(135deg, #2ecc71, #9b59b6, #3498db, #f0f8ff); }
+    100% { background: linear-gradient(135deg, #9b59b6, #3498db, #f0f8ff, #add8e6); }
+}
+
+/* Styling for header */
+h1 {
+    color: #2c3e50; /* Dark color for title */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better visibility */
+}
+
+/* Timer Message Styling */
+.timer-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Message Styling */
+.message {
+    font-size: 24px;
+    color: #8e44ad;
+    margin-top: 20px;
+}
+
+/* Styling for the fun button */
+.fun-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fun-button:hover {
+    background-color: #ff4d91;
+}
+
+/* Game Buttons Styling */
+.game-button {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Fun Fact Styling */
+.fun-fact {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Floating Points Section */
+#points {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71;
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+/* Floating box for fun fact button */
+.floating-box {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
